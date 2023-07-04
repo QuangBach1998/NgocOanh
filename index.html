@@ -1,0 +1,197 @@
+<!--! link chọn màu : https://flatuicolors.com/  -->
+<!--! thẻ p: nơi chứa văn bản -->
+<!--! strike: tạo chữ gạch ngang -->
+<!--! b: tạo chữ in đậm-->
+<!--! em: tạo chữ in nghiêng -->
+<!--! u: tạo chữ gạch chân -->
+<!--! thẻ img: nơi chứa ảnh -->
+<!--! thẻ a: nơi chứa đường link-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FE basic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap"
+    rel="stylesheet">
+  <style>
+    /*! position:absolute lấy thằng cha gần nhất có thuộc tính position làm gốc*/
+    /*! position:fix lấy góc màn hình làm gốc*/
+    /*! position:relative lấy vị trí ban đầu của chính nó làm gốc*/
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: 'Lato', sans-serif;
+    }
+
+    h1,
+    h2 {
+      color: purple;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .container {
+      width: 1140px;
+      margin: 0 auto;
+      background-color: lavender;
+      padding: 0 20px;
+    }
+
+    .content {
+      width: 75%;
+      float: left;
+    }
+
+    form {
+      width: 25%;
+      float: left;
+    }
+
+    input,
+    textarea {
+      display: block;
+    }
+
+    input {
+      margin: 20px;
+      width: 200px;
+      padding: 10px 20px;
+    }
+
+    textarea {
+      width: 200px;
+      margin-left: 20px;
+      padding: 20px;
+    }
+
+    .avatar_image {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      float: left;
+    }
+
+    h4 {
+      float: left;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+
+    .infor {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .date {
+      position: relative;
+      left: 200px
+    }
+
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <!--! thẻ h: tiêu đề của các phần trong trang web -->
+      <h1 class="heading">Ngọc Oanh 2K1 BLOG</h1>
+
+      <div class="date">
+        <h2>Ngày 13 tháng 03 năm 2001</h2>
+      </div>
+
+      <h2>Yêu Oanh</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa
+        corporis, rerum fugit ullam officiis, obcaecati quod dolor maxime ex optio
+        iste cumque assumenda recusandae. Obcaecati iusto at itaque consectetur?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa
+        corporis, rerum fugit ullam officiis, obcaecati quod dolor maxime ex optio
+        iste cumque assumenda recusandae. Obcaecati iusto at itaque consectetur?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa
+        corporis, rerum fugit ullam officiis, obcaecati quod dolor maxime ex optio
+        iste cumque assumenda recusandae. Obcaecati iusto at itaque consectetur?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa
+        corporis, rerum fugit ullam officiis, obcaecati quod dolor maxime ex optio
+        iste cumque assumenda recusandae. Obcaecati iusto at itaque consectetur?
+      </p>
+
+      <h2>Xin lỗi Oanh nhiều lắm</h2>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur adipisci delectus, distinctio
+        sapiente neque eligendi veritatis aliquam voluptatibus, corporis dolorum, repellendus necessitatibus ducimus
+        rerum ut libero. Animi, laboriosam velit.
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur adipisci delectus, distinctio
+        sapiente neque eligendi veritatis aliquam voluptatibus, corporis dolorum, repellendus necessitatibus ducimus
+        rerum ut libero. Animi, laboriosam velit.
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur adipisci delectus, distinctio
+        sapiente neque eligendi veritatis aliquam voluptatibus, corporis dolorum, repellendus necessitatibus ducimus
+        rerum ut libero. Animi, laboriosam velit.
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur adipisci delectus, distinctio
+        sapiente neque eligendi veritatis aliquam voluptatibus, corporis dolorum, repellendus necessitatibus ducimus
+        rerum ut libero. Animi, laboriosam velit.
+      </p>
+
+    </div>
+
+
+    <form action="">
+      <input type="text" placeholder="Điền tên">
+      <input type="submit" value="gửi nhanh">
+      <textarea cols="100" rows="10" placeholder="gửi lời yêu thương"></textarea>
+    </form>
+    <div class="clearfix"></div>
+    <div class="avatar">
+      <img class="avatar_image"
+        src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/236828874_3034978010158615_6502676337843249007_n.jpg?_nc_cat=104&cb=99be929b-3346023f&ccb=1-7&_nc_sid=174925&_nc_ohc=5qs875xIRsEAX824cF7&_nc_ht=scontent.fhan19-1.fna&oh=00_AfBWB5CqUaQ-p_kKIisbkYxyP-8CJ-uNlPqQ231u-r3_Lw&oe=64A4C8C4"
+        alt="Oanh avt">
+      <h4>Oanh xinh đẹp</h4>
+    </div>
+    <div class="clearfix"></div>
+    <div class="infor">
+      <div>
+        SĐT: 0359752xxx
+      </div>
+      <div>
+        Địa chỉ: Đông Anh Hà Nội
+      </div>
+      <div>
+        Email: oanhcutephomaique@gmail.com
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
